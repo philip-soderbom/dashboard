@@ -1,6 +1,6 @@
 # Dashboard Project
 
-For this project I am using Next JS with TypeScript and Tailwind CSS. Furthermore, prisma will be used to manage server logic (database)
+For this project I am using Next JS with TypeScript and Tailwind CSS. Furthermore, Prisma will be used to manage server logic (database)
 
 ## Getting Started
 
@@ -42,6 +42,23 @@ Create new folder and change to that directory, then:
 - `git add .`
 - `git commit -m "first commit"`
 - `git push -u origin main`
+
+## Using Prisma
+
+Define model in `schema.prisma`:
+
+```
+model Todo {
+  id        String   @id @default(uuid())
+  title     String
+  complete  Boolean
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+```
+
+Run a migration to create your SQLite database tables with Prisma Migrate:
+`npx prisma migrate dev --name init`
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
