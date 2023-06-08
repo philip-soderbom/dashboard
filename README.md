@@ -32,6 +32,17 @@ Then, use the following commands to set everything up, and complete first stagin
 
 From here on, staging, commiting and pushing is done as usual.
 
+Initialize git manually (when not using npx)
+
+Create new folder and change to that directory, then:
+
+- `git init`
+- `git branch -M main`
+- `git remote add origin <remote_repo_url>`
+- `git add .`
+- `git commit -m "first commit"`
+- `git push -u origin main`
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Running
