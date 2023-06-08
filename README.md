@@ -1,6 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dashboard Project
+
+For this project I am using Next JS with TypeScript and Tailwind CSS. Furthermore, prisma will be used to manage server logic (database)
 
 ## Getting Started
+
+Created new directory `dashboard` in [path](/Users/philipsoderbom/code/webdev/react/) in which the Next JS application is created:
+
+```
+mkdir dashboard
+cd dashboard
+
+npx create-next-app@latest . % create next application in current directory
+
+```
+
+### Initialize git version control with GitHub
+
+Then, use the following commands to set everything up, and complete first staging and commit. Then push for the first time to the remote GitHub repo.
+
+- `git branch -M main`
+- `git remote add origin <remote_repo_url>`
+- `git add .`
+- `git commit -m "first commit"`
+- `git push -u origin main`
+
+From here on, staging, commiting and pushing is done as usual.
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Running
 
 First, run the development server:
 
