@@ -3,6 +3,9 @@
     &:hover {
         transform: scale(1.02);
         transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
-        cursor: pointer; 
+        cursor: pointer;
+    }
+    h2 {
+        color: slateblue;
     }
 }
