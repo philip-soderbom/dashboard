@@ -4,7 +4,7 @@ For this project I am using Next JS with TypeScript and Tailwind CSS. Furthermor
 
 ## Getting Started
 
-Created new directory `dashboard` in [path](/Users/philipsoderbom/code/webdev/react/) in which the Next JS application is created:
+Created new directory `dashboard` in _/Users/philipsoderbom/code/webdev/react/_ in which the Next JS application is created:
 
 ```
 mkdir dashboard
