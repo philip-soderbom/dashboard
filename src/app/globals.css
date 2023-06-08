@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.grid-main {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "cards";
+    height: 75vh;
+}
+
+.grid-main h1 {
+    grid-area: title;
+}
+
+.grid-main .cards {
+    grid-area: cards; 
+}
