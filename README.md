@@ -4,14 +4,20 @@ For this project I am using Next JS with TypeScript and Tailwind CSS. Furthermor
 
 ## Getting Started
 
-Created new directory `dashboard` in _/Users/philipsoderbom/code/webdev/react/_ in which the Next JS application is created:
+Created new directory `dashboard` in path `/Users/philipsoderbom/code/webdev/react/` in which the Next JS application is created:
 
 ```
 mkdir dashboard
 cd dashboard
 
-npx create-next-app@latest . % create next application in current directory
+%%% Create next application in current directory
+npx create-next-app@latest .
 
+%%% Install prisma
+npm install prisma --save-dev
+
+%%% Finally, set up Prisma with the init command
+npx prisma init --datasource-provider sqlite
 ```
 
 ### Initialize git version control with GitHub
