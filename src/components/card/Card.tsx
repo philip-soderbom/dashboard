@@ -12,7 +12,7 @@ function fixString(str: String) {
 
 export default function Card(props: Props) {
     return (
-        <Link href={`${fixString(props.text)}`} className="card m-4 p-6 bg-white rounded-2xl">
+        <Link href={`${fixString(props.text)}`} className="card m-4 p-6 bg-white rounded-2xl hover:shadow-lg">
             <div>
                 <h2 className="text-2xl text-emerald-500">{props.text}</h2>
                 <p>Additional text</p>
