@@ -1,5 +1,6 @@
-import Card from "@/src/components/card/Card";
-import { Calendar } from "@/src/components/ui/calendar";
+import Card from '../components/card/Card'
+import Link from "next/link";
+import React from "react";
 
 const cardTitles = ['Todo List', 'Notes', 'Logs', 'Philip']
 
@@ -11,14 +12,7 @@ export default function Home() {
         {cardTitles.map((cardTitle, i) => (
           <Card key={i} text={cardTitle}></Card>
         ))}
-        <div>
-          <Calendar></Calendar>
-        </div>
-        <div>
-          <p>image</p>
-        </div>
       </div>
-
     </div>
   )
 }
