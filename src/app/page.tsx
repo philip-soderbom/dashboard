@@ -1,8 +1,7 @@
 import Card from '../components/card/Card'
-import Link from "next/link";
 import React from "react";
 
-const cardTitles = ['Todo List', 'Notes', 'Logs', 'Philip']
+const cardTitles = ['Todo List', 'Notes', 'Profile', 'Other']
 
 export default function Home() {
   return (
