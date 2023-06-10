@@ -6,7 +6,7 @@ const cardTitles = ['Todo List', 'Notes', 'Profile', 'Other']
 export default function Home() {
   return (
     <div className="grid-main">
-      <h1 className="text-center text-6xl my-8">Philip's Dashboard</h1>
+      <h1 className="text-center text-6xl my-20">Philip's Dashboard</h1>
       <div className="cards grid grid-cols-3">
         {cardTitles.map((cardTitle, i) => (
           <Card key={i} text={cardTitle}></Card>
