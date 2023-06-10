@@ -14,20 +14,20 @@ export default async function Page() {
 
     return (
         <>
-            <div className="mt-24 flex justify-between item-center mb-4">
-                <h1 className="text-3xl">Todos</h1>
-                <Link
-                    className="border border-slate-300 text-slate-300 px-2 py-1 rounded
-                  hover:bg-slate-700 focus-within:bg-slate-700 outline-none"
-                    href="/new"
-                >New</Link>
-            </div>
+            <h1 className="mt-24 text-6xl">Todo List</h1>
 
-            <ul className="pl-4">
+            <ul className="pl-4 my-4">
                 {todos.map((todo) => (
                     <TodoItem key={todo.id} {...todo}></TodoItem>
                 ))}
             </ul>
+
+            <Link
+                className="border border-slate-300 text-slate-300 text-2xl font-bold px-2 py-1 rounded
+                  hover:bg-slate-700 focus-within:bg-slate-700 outline-none"
+                href="/new-todo"
+            >+
+            </Link>
         </>
 
     )
