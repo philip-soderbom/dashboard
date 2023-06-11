@@ -1,6 +1,6 @@
 # Dashboard Project
 
-For this project I am using Next JS with TypeScript and Tailwind CSS. Furthermore, Prisma will be used to manage server logic (database)
+For this project I am using Next JS 13 with TypeScript and Tailwind CSS with additional Sass for styling. Furthermore, Prisma will be used to manage server logic (database)
 
 ## Getting Started
 
@@ -60,7 +60,9 @@ model Todo {
 Run a migration to create your SQLite database tables with Prisma Migrate:
 `npx prisma migrate dev --name init`
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Adding React Icons
+
+`npm i react-icons`
 
 ## Running
 

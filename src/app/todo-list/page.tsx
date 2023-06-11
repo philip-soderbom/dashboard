@@ -3,7 +3,7 @@ import { prisma } from "@/db";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import React from "react";
-
+import { AiFillPlusCircle } from 'react-icons/ai'
 
 async function getTodos() {
     return prisma.todo.findMany()
@@ -11,19 +11,9 @@ async function getTodos() {
 
 async function toggleTodo(id: string, complete: boolean) {
     "use server"
-    console.log('update status to: ', complete);
     await prisma.todo.update({
         where: { id },
         data: { complete }
-    })
-}
-
-async function deleteTodo(deleteId: string) {
-    "use server"
-    const deletedTodo = await prisma.todo.delete({
-        where: {
-            id: deleteId
-        }
     })
 }
 
@@ -32,6 +22,7 @@ async function deleteAllTodos() {
     await prisma.todo.deleteMany({})
     redirect("/todo-list")
 }
+
 
 export default async function Page() {
     const todos = await getTodos()
@@ -46,12 +37,15 @@ export default async function Page() {
                 ))}
             </ul>
 
-            <Link
-                className="border border-slate-300 text-slate-300 text-2xl font-bold px-2 py-1 rounded
-                  hover:bg-slate-700 focus-within:bg-slate-700 outline-none"
-                href="/new-todo"
-            >+
-            </Link>
+            <div className="flex">
+                <Link
+                    className="text-white hover:text-slate-600 text-5xl font-bold px-2 py-1 rounded outline-none"
+                    href="/new-todo"
+                >
+                    <AiFillPlusCircle />
+                </Link>
+            </div>
+
 
             {todos.length > 0 && (
                 <form action={deleteAllTodos} className="mt-4 text-xl">

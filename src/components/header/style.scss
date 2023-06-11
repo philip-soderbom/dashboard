@@ -1,4 +1,16 @@
+@import '../../assets/globalstyles.scss';
 header {
     display: flex;
-    align-items: center; 
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+
+    .link {
+        border: 1px solid white;
+        transition: $transition;
+
+    }
+    .link:hover {
+        background: $primaryColor;
+        transition: $transition;
+    }
 }
